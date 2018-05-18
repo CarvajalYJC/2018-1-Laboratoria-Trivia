@@ -1,11 +1,10 @@
+body{
+    background-color: #f2f5a9
+}
 h1{
     text-align:center;
     background: #151515;
-<<<<<<< HEAD
     color: #FFF; 
-=======
-    color: #FFF;
->>>>>>> 97cbcd7c4ddbb605cf82b7556f24f84bbc2bccc0
     height: 20px;
     font-size: 15px;
     margin: 0;
