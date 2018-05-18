@@ -93,6 +93,7 @@ function reply() {
    document.getElementById('resultTable').style.visibility = 'visible'
 }
 
+<<<<<<< HEAD
 document.getElementById("clickMe").onclick = reply;
 
 
@@ -156,4 +157,6 @@ document.getElementById("clickMe").onclick = reply;
     document.getElementById('resultTable').style.visibility = 'visible'
 }
 
+=======
+>>>>>>> b18094827bae2a67dc90bc144e4cd5946aee2251
 document.getElementById("clickMe").onclick = reply;
