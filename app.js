@@ -8,7 +8,7 @@ buttomLogin.addEventListener('click', function () {
    }
    while (false == nameLoad || null === nameLoad);
 
- // Instrucciones
+ // agregar instrucciones
 
    document.getElementById('loginName').style.display = 'none';
    document.getElementById('userName').innerHTML = 'Bienvenid@ ' + nameLoad;
@@ -92,5 +92,3 @@ function reply() {
    document.getElementById('clickMe').style.display = 'none';
    document.getElementById('resultTable').style.visibility = 'visible'
 }
-
-document.getElementById("clickMe").onclick = reply;
