@@ -92,3 +92,5 @@ function reply() {
    document.getElementById('clickMe').style.display = 'none';
    document.getElementById('resultTable').style.visibility = 'visible'
 }
+
+document.getElementById("clickMe").onclick = reply;
