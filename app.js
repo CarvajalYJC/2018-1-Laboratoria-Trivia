@@ -1,40 +1,159 @@
-//comentario de prueba
-window.onload = function() {
-    var name = prompt("¿cuál es tu nombre?");
-    document.getElementById("name").innerText = name;
+var buttomLogin = document.getElementById('loginName');
 
-    var wantToPlay = prompt("¿quieres jugar? s/n");
-    if (wantToPlay.toLowerCase() == "s") {
-        var answer1 = prompt("¿han egresado hombres en Laboratoria? s/n");
-        if (answer1.toLowerCase() == "n") {
-            document.getElementById("rightAnswersText").innerHTML =
-                document.getElementById("rightAnswersText").innerHTML +
-                "<div class='answer'>" +
-                "<p>No han egresado hombres</p>"
-            "</div>";
-        } else {
-            document.getElementById("wrongAnswersText").innerHTML =
-                document.getElementById("wrongAnswersText").innerHTML +
-                "<div class='answer'>" +
-                "<p>No han egresado hombres</p>"
-            "</div>";
-        }
+buttomLogin.addEventListener('click', function () {
 
-        var answer2 = prompt("¿hay laboratoria en concepción? s/n");
-        if (answer2.toLowerCase() == "n") {
-            document.getElementById("rightAnswersText").innerHTML =
-                document.getElementById("rightAnswersText").innerHTML +
-                "<div class='answer'>" +
-                "<p>No hay laboratoria en concepción</p>"
-            "</div>";
-        } else {
-            document.getElementById("wrongAnswersText").innerHTML =
-                document.getElementById("wrongAnswersText").innerHTML +
-                "<div class='answer'>" +
-                "<p>No hay laboratoria en concepción</p>"
-            "</div>";
-        }
-    } else {
-        document.getElementById("warningMessage").innerText = "Bueno Chao";
-    }
+   var nameLoad = null;
+   do {
+       nameLoad = ('¿Cual es tu nombre?');
+   }
+   while (false == nameLoad || null === nameLoad);
+
+ // agregar instrucciones
+
+   document.getElementById('loginName').style.display = 'none';
+   document.getElementById('userName').innerHTML = 'Bienvenid@ ' + nameLoad;
+   document.getElementById('queries').style.visibility = 'visible';
+   document.getElementById('clickMe').style.visibility = 'visible';
+});
+
+function reply() {
+
+   var questionOne = '';
+
+   if (document.getElementById('answerOne').checked) {
+       questionOne = document.getElementById('answerOne').value;
+   }
+
+   if (document.getElementById('answerTwo').checked) {
+       questionOne = document.getElementById('answerTwo').value;
+   }
+
+   if (document.getElementById('answerThree').checked) {
+       questionOne = document.getElementById('answerThree').value;
+   }
+
+
+   var questionTwo = '';
+
+   if (document.getElementById('answerFour').checked) {
+       questionTwo = document.getElementById('answerFour').value;
+   }
+
+   if (document.getElementById('answerFive').checked) {
+       questionTwo = document.getElementById('answerFive').value;
+   }
+
+   if (document.getElementById('answerSix').checked) {
+       questionTwo = document.getElementById('answerSix').value;
+   }
+
+   var questionThree = '';
+
+   if (document.getElementById('answerSeven').checked) {
+       questionThree = document.getElementById('answerSeven').value;
+   }
+
+   if (document.getElementById('answerEight').checked) {
+       questionThree = document.getElementById('answerEight').value;
+   }
+
+   if (document.getElementById('answerNine').checked) {
+       questionThree = document.getElementById('answerNine').value;
+   }
+
+   var scoreQuestionOne = null;
+   if (questionOne === 'San Francisco') {
+       scoreQuestionOne = 1;
+   }
+   else {
+       scoreQuestionOne = 0;
+   }
+
+   var scoreQuestionTwo = null;
+   if (questionTwo === 'Ambos') {
+       scoreQuestionTwo = 1;
+   }
+   else {
+       scoreQuestionTwo = 0;
+   }
+
+   var scoreQuestionThree = null
+   if (questionThree === '6 meses') {
+       scoreQuestionThree = 1;
+   }
+   else {
+       scoreQuestionThree = 0;
+   }
+
+   var resultScore = scoreQuestionOne + scoreQuestionTwo + scoreQuestionThree;
+
+   document.getElementById('result').innerHTML = 'Tuviste: ' + resultScore + ' preguntas correctas.';
+   document.getElementById('queries').style.display = 'none';
+   document.getElementById('clickMe').style.display = 'none';
+   document.getElementById('resultTable').style.visibility = 'visible'
 }
+
+document.getElementById("clickMe").onclick = reply;
+
+
+    var questionTwo = '';
+
+    if (document.getElementById('answerFour').checked) {
+        questionTwo = document.getElementById('answerFour').value;
+    }
+
+    if (document.getElementById('answerFive').checked) {
+        questionTwo = document.getElementById('answerFive').value;
+    }
+
+    if (document.getElementById('answerSix').checked) {
+        questionTwo = document.getElementById('answerSix').value;
+    }
+
+    var questionThree = '';
+
+    if (document.getElementById('answerSeven').checked) {
+        questionThree = document.getElementById('answerSeven').value;
+    }
+
+    if (document.getElementById('answerEight').checked) {
+        questionThree = document.getElementById('answerEight').value;
+    }
+
+    if (document.getElementById('answerNine').checked) {
+        questionThree = document.getElementById('answerNine').value;
+    }
+
+    var scoreQuestionOne = null;
+    if (questionOne === 'San Francisco') {
+        scoreQuestionOne = 1;
+    }
+    else {
+        scoreQuestionOne = 0;
+    }
+
+    var scoreQuestionTwo = null;
+    if (questionTwo === 'Ambos') {
+        scoreQuestionTwo = 1;
+    }
+    else {
+        scoreQuestionTwo = 0;
+    }
+
+    var scoreQuestionThree = null
+    if (questionThree === '6 meses') {
+        scoreQuestionThree = 1;
+    }
+    else {
+        scoreQuestionThree = 0;
+    }
+
+    var resultScore = scoreQuestionOne + scoreQuestionTwo + scoreQuestionThree;
+
+    document.getElementById('result').innerHTML = 'Tuviste: ' + resultScore + ' preguntas correctas.'; 
+    document.getElementById('queries').style.display = 'none';
+    document.getElementById('clickMe').style.display = 'none';
+    document.getElementById('resultTable').style.visibility = 'visible'
+}
+
+document.getElementById("clickMe").onclick = reply;
