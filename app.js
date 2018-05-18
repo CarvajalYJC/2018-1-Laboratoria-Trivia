@@ -1,3 +1,4 @@
+//comentario de prueba
 window.onload = function() {
     var name = prompt("¿cuál es tu nombre?");
     document.getElementById("name").innerText = name;
