@@ -15,3 +15,17 @@
 .answer {
     color: white;
 }
+
+h1{
+    text-align:center;
+    background: #151515;
+    color: #6E6E6E; 
+    height: 20px;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+  }
