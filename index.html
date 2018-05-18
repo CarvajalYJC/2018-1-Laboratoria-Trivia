@@ -3,7 +3,7 @@
 
 <head>
     <meta charset=utf-8>
-    <title>Trivia</title>
+    <title>Trivia Reloaded</title>
     <link rel="stylesheet" href="style.css" />
   <!--Personalizacón, favicon-->
     <link rel="icon" type="image/png" href="https://icon-icons.com/icons2/724/PNG/256/speech-balloon-orange-l256_icon-icons.com_62601.png"/>
@@ -16,11 +16,39 @@
     <center><img class="img1" alt="alt img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1PYbFaxNUBcLvX393tIn_xn4cV3mn0SfxBll3ycXDtisnPER2"/></center>
   <!--Botón-->
     <h2> <button id="loginName">¡Entrar!</button> </h2>
-
+  <!--Cuerpo del formulario-->
+    <div id="queries">
+        <h3>1.- ¿Cual de estas ciudades no es sede de laboratoria?</h3>
+ 
+        <input type="radio" id="answerOne" name="questionOne" value="Sao Paulo" checked="checked"> Sao Paulo
+        <input type="radio" id="answerTwo" name="questionOne" value="Santiago"> Santiago
+        <input type="radio" id="answerThree" name="questionOne" value="San Francisco"> San Francisco
+ 
+        <h3>2.- ¿Cuales son los perfiles de las egresadas de laboratoria?</h3>
+        <input type="radio" id="answerFour" name="questionTwo" value="FrontEnd Web Developer" checked="checked"> FrontEnd Web Developer
+        <input type="radio" id="answerFive" name="questionTwo" value="UX Designer"> UX Designer
+        <input type="radio" id="answerSix" name="questionTwo" value="Ambos"> Ambos
+ 
+        <h3>3.- ¿Cuanto es la duración del Bootcamp de Laboratoria?</h3>
+        <input type="radio" id="answerSeven" name="questionThree" value="1 año" checked="checked"> 1 año
+        <input type="radio" id="answerEight" name="questionThree" value="6 meses"> 6 meses
+        <input type="radio" id="answerNine" name="questionThree" value="2 años"> 2 años
+    </div>
+    <br>
+     <input id="clickMe" type="button" value="Responder">
+     <h4>
+        <label id="result"></label>
+    </h4>
+    <table id=resultTable>
+    </table>
+  <!--Enlaces de JS y CSS -->
     <script src="app.js"></script>
     <script src="style.css"></script>
+    <br>
+    <br>
   <!--Squad 4: Tres personas -->
   <div id="Squad">BootCamp SCL 20181 - Tamara, Marye & Yuliannys</div>
+
 </body>
 
 </html>
