@@ -1,13 +1,6 @@
-var buttomLogin = document.getElementById('loginName');
-
-buttomLogin.addEventListener('click', function () {
-
  // Instrucciones
-   document.getElementById('loginName').style.display = 'none';
-   document.getElementById('userName').innerHTML = 'Bienvenid@ ' + nameLoad;
-   document.getElementById('queries').style.visibility = 'visible';
-   document.getElementById('clickMe').style.visibility = 'visible';
-});
+ document.getElementById('queries').style.visibility = 'visible';
+ document.getElementById('clickMe').style.visibility = 'visible';
 
 function reply() {
 // Pregunta uno.
