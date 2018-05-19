@@ -26,7 +26,7 @@ h1{ /* Agregando detalles al h1 */
  }
  input { /* Agregando detalles a los botones dentro de la caja y al botón de responder*/
     background: rgba(255,255,255,0.2);
-    font-size: 20px;
+    font-size: 15px;
  }
 .wait {
     cursor:wait;
