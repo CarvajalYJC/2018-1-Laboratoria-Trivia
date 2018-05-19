@@ -1,3 +1,6 @@
+body{
+    background: rgba(54, 53, 53, 0.959);
+}
 h1{ /* Agregando detalles al h1 */
     text-align:center;
     background: rgba(255,255,255,0.2);
