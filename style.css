@@ -21,7 +21,7 @@ h1{ /* Agregando detalles al h1 */
     position: center;
     max-width: 600px;
     color: #000;
-    font-size: 20px;
+    font-size: 15px;
     background: rgba(255,255,255,0.2);
  }
  input { /* Agregando detalles a los botones dentro de la caja y al botón de responder*/
