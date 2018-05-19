@@ -25,3 +25,6 @@ h1{ /* Agregando detalles al h1 */
     background: rgba(255,255,255,0.2);
     font-size: 20px;
  }
+.wait {
+    cursor:wait;
+}
