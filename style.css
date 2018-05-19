@@ -11,7 +11,7 @@ h1{ /* Agregando detalles al h1 */
     position: fixed;
  }
  img{ /* Agregando separación en la imagen respecto al h1 y caja */
-    padding: 3%
+    padding: 1%
  }
  div{ /* Agregando detalles a la caja que contiene las preguntas */
     position: center;
