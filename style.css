@@ -1,7 +1,7 @@
 h1{
     text-align:center;
-    background: #151515;
-    color: #FFF; 
+    background: rgba(255,255,255,0.2);
+    color: #000; 
     height: 40px;
     font-size: 30px;
     margin: 0;
