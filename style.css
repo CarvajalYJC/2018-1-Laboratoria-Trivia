@@ -1,4 +1,4 @@
-h1{
+h1{ /* Agregando detalles al h1 */
     text-align:center;
     background: rgba(255,255,255,0.2);
     color: #000; 
@@ -10,10 +10,10 @@ h1{
     top: 0;
     position: fixed;
  }
- img{
+ img{ /* Agregando separación en la imagen respecto al h1 y caja */
     padding: 3%
  }
- div{
+ div{ /* Agregando detalles a la caja que contiene las preguntas */
     position: center;
     max-width: 600px;
     color: #000;
@@ -22,3 +22,6 @@ h1{
     background: rgba(255,255,255,0.2);
     border-radius: 10px 10px 0 0;
  }
+ input { /* Agregando detalles a los botones dentro de la caja y al botón de responder*/
+    background: rgba(255,255,255,0.2);
+ } 
